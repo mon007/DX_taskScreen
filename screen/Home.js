@@ -60,17 +60,7 @@ const Home = () => {
   );
 };
 
-const styles = StyleSheet.create({
-    navOptions: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        flex: 1,
-      },
-    
-      navText: {
-        fontSize: 14,
-        color: '#000',
-      },
+const styles = StyleSheet.create({    
       list: {
         paddingBottom: 20,
       },
@@ -81,6 +71,7 @@ const styles = StyleSheet.create({
         padding: 16,
         marginBottom: 16,
         backgroundColor: '#fff',
+        marginHorizontal:16
       },
       templateImage: {
         width: '100%',

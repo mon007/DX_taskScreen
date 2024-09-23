@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TextInput, StyleSheet, Image } from 'react-native';
+import { View, TextInput, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const SearchBar = () => {
     return (
@@ -8,12 +8,12 @@ const SearchBar = () => {
                 style={styles.searchBar}
                 placeholder="Search in all Templates"
             />
-            <View style={styles.searchIconView}>
+            <TouchableOpacity style={styles.searchIconView}>
                 <Image
                     source={require('../assets/search.png')}
                     style={styles.searchLogo}
                 />
-            </View>
+            </TouchableOpacity>
         </View>
     );
 };
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingVertical:10,
+        paddingHorizontal:16
     },
 
     searchBar: {
